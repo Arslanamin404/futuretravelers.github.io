@@ -1,0 +1,286 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@1,500&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navbar-Start */
+
+.logo {
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: "Itim", cursive;
+  color: white;
+  display: block;
+  text-align: center;
+  background-color: black;
+  padding: 20px 0;
+}
+
+.toggleIcon {
+  padding: 10px 0;
+  font-size: 2.3rem;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 10px;
+}
+.menu {
+  color: white;
+  width: 30%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: -30%;
+  transition: 0.3s;
+  z-index: 9999;
+}
+.menu-items {
+  padding: 4rem 0;
+}
+.menu ul li {
+  list-style: none;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.menu ul li a {
+  display: block;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+.close {
+  padding: 20px 10px;
+  font-size: 3.5rem;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.showMenu {
+  right: 0%;
+  transition: 0.6s;
+}
+/* Navbar-End */
+footer {
+  background-color: #333;
+  display: flex;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 15px 20px;
+  float: left;
+  font-size: 19px;
+}
+
+a.active {
+  text-decoration: underline;
+  color: orange;
+}
+section {
+  text-align: center;
+  padding-top: 75px;
+  min-height: 40vh;
+  height: 100%;
+}
+section :nth-child(even) {
+  background-color: #ececec;
+}
+h2 {
+  padding-bottom: 40px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+section h2 span {
+  background: linear-gradient(to right, #f5d837, #bbb812);
+  padding: 15px 55px;
+  border-radius: 25px;
+  color: white;
+}
+.nature {
+  margin-top: -40px;
+  margin-bottom: -3px;
+}
+
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.carousel-cell video {
+  max-width: 100%;
+}
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+.flex-align-right {
+  margin-left: auto;
+}
+.img-responsive {
+  max-width: 130vh;
+  max-height: 100vh;
+}
+.profile-img {
+  height: 16%;
+  width: 11%;
+  border-radius: 50%;
+}
+.profile-name {
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  margin: 10px 0px -10px 0px;
+}
+.small-handle a {
+  background-color: rgb(238, 238, 238);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 5px 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.small-handle a:hover {
+  background-color: rgba(65, 58, 58, 0.25);
+}
+.li-handle {
+  color: #0e76a8;
+}
+.insta-handle {
+  color: #dd2a7b;
+}
+.facebook-handle {
+  color: #4267b2;
+}
+.about {
+  color: #1c1a3a;
+  padding-top: 0px 30px;
+  line-height: 2.4em;
+  margin-top: -120px;
+  font-size: 1.3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  /* NavBar-Start */
+
+  .menu {
+    width: 100%;
+    right: -100%;
+  }
+  .showMenu {
+    right: 0%;
+    transition: 0.6s;
+  }
+  .menu-items {
+    display: flex;
+    justify-content: center;
+  }
+  .menu ul li {
+    margin-bottom: 20px;
+  }
+  .menu ul li a {
+    font-size: 1.6rem;
+  }
+  .toggleIcon {
+    margin: 0px;
+    padding: 6px 2px;
+  }
+  /* NavBar-End */
+  .logo {
+    font-size: 2.5rem;
+    padding: 25px 0;
+  }
+  footer a {
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  a:link {
+    font-size: 20px;
+  }
+  .flex-align-right {
+    margin-left: 0;
+  }
+  .small-handle {
+    margin-top: auto;
+  }
+  .small-handle a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 1px 0 0;
+    margin: 4px 75px 10px;
+    font-size: 30px;
+  }
+  .fa fa-facebook,
+  fa fa-linkedin,
+  fa fa-instagram {
+    size: 12px;
+    margin-bottom: 12px;
+  }
+  .about {
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: justify;
+  }
+  .profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    word-spacing: 12px;
+  }
+  .profile-img {
+    height: 19%;
+    width: 60%;
+    border-radius: 50%;
+  }
+  section h2 span {
+    padding: 15px 65px;
+    font-size: 20px;
+  }
+  section {
+    min-height: auto;
+  }
+}
